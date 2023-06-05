@@ -1,0 +1,45 @@
+.nav-bg {
+    background-color: #0071f8 !important;
+    border-radius: 0px 0px 25px 25px;
+    height: 80px !important;
+    position: fixed !important;
+    top: 0 !important;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 1.15) !important;
+}
+
+.top-scroll {
+    position: fixed;
+    background-color: transparent;
+    top: 25px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transition: var(--transition);
+}
+
+.navbar-toggler-icon {
+    font-size: 30px;
+}
+
+.navbar-nav {
+    gap: 30px;
+}
+
+.nav-link {
+    border-radius: 100px;
+    letter-spacing: 1.5px;
+}
+
+.nav-link:hover {
+    border-radius: 100px;
+    background-color: var(--bg-hover);
+}
+
+.nav-link.active {
+    background-color: var(--bg-hover);
+}
+
+.nav-link.sing {
+    background-color: var(--bg-btn);
+    font-weight: 500;
+}

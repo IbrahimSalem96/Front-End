@@ -1,0 +1,120 @@
+.section {
+    margin-top: 120px;
+}
+
+.contact-page .left-text {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 60px;
+}
+
+.contact-page .left-text .section-heading {
+    margin-bottom: 50px;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.section-heading h6 {
+    color: var(--bg-btn);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 44px;
+}
+
+.contact-page .left-text p {
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #4a4a4a;
+}
+
+.contact-page .left-text ul li {
+    display: block;
+    font-size: 16px;
+    color: #aaaaaa;
+    font-size: 300;
+    margin-bottom: 30px;
+}
+
+.contact-page .right-content {
+    margin-left: 50px;
+}
+
+.contact-page .right-content #map {
+    margin-bottom: 60px;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.contact-page .right-content form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0px 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+.contact-page .right-content form textarea {
+    width: 100%;
+    height: 130px;
+    border-radius: 25px;
+    padding: 20px 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+.contact-page .right-content form button {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--bg-btn);
+    color: var(--color-white);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+
+.contact-page .right-content form button:hover {
+    background-color: var(--bg-btnHover);
+    transition: var(--transition);
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-page .right-content {
+        margin-left: 0;
+    }
+
+    .contact-page .right-content #map iframe {
+        border-radius: 32px;
+    }
+
+}

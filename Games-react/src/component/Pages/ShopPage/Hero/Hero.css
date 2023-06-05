@@ -1,0 +1,29 @@
+.page-heading {
+    background-image: url(../../../../assets/page-heading-bg.jpg);
+    border-radius: 0px 0px 150px 150px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px 100px 0px;
+    text-align: center;
+}
+
+.page-heading h3 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.page-heading span i {
+    font-size: 12px;
+}
+
+.page-heading span {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+}
