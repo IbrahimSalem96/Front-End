@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>heckout</title>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- icon website-->
+    <link rel="icon" type="image/x-icon" href="images/shopping-cart.png">
+    <!-- Link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!-- link Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Gideon+Roman&family=Roboto:ital,wght@0,100;0,300;0,500;1,400&display=swap" rel="stylesheet">
+    <!-- Link css style -->
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+    <body>
+        <!-- Start nav -->
+        <nav class="container navbar navbar-expand-lg navbar-light bg-white mt-5 p-2 position-fixed">
+            <div class="container-fluid container-fluid-in">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/e-commerce.png" alt="" width="70" height="54">
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav p-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active text-uppercase text-warning " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link-in nav-link text-uppercase text-dark" href="#">Shop</a>
+                            <ul class="list-group mt-0 rounded-0">
+                                <li class="list-group-item border-0 p-0 ps-3">
+                                    <a class="nav-link-in nav-link text-uppercase fw-bold" href="category.html">Shop Category</a>
+                                </li>
+                                <li class="list-group-item border-0 p-0 ps-3  fw-bold">
+                                    <a class="nav-link-in nav-link text-uppercase fw-bold" href="details.html">Product Details</a>
+                                </li>
+                                <li class="list-group-item border-0 p-0 ps-3">
+                                    <a class="nav-link-in nav-link text-uppercas fw-bold" href="checkout.html">Product Checkout</a>
+                                </li>
+                                <li class="list-group-item border-0 p-0 ps-3  fw-bold">
+                                    <a class="nav-link-in nav-link text-uppercase fw-bold" href="shopping.html">Shopping Cart</a>
+                                </li>
+                                <li class="list-group-item border-0 p-0 ps-3">
+                                    <a class="nav-link-in nav-link text-uppercas fw-bold" href="confirmation.html">Confirmation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link-in nav-link text-uppercase text-dark" href="#">Blog</a>
+                                <ul class="list-group mt-0 rounded-0 ">
+                                    <li class="list-group-item border-0 p-0 ps-3">
+                                        <a class="nav-link-in nav-link text-uppercase fw-bold" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 ps-3  fw-bold">
+                                        <a class="nav-link-in nav-link text-uppercase fw-bold" href="login.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link-in nav-link text-uppercase text-dark" href="#">Pages</a> 
+                                <ul class="list-group mt-0 rounded-0">
+                                    <li class="list-group-item border-0 p-0 ps-3">
+                                        <a class="nav-link-in nav-link text-uppercase fw-bold" href="login.html">Login</a>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 ps-3  fw-bold">
+                                        <a class="nav-link-in nav-link text-uppercase fw-bold" href="tracking.html">Tracking</a>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 ps-3">
+                                        <a class="nav-link-in nav-link text-uppercas fw-bold" href="#">Elements</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link-in nav-link text-uppercase text-dark" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item me-3 d-none d-lg-block d-xl-block" id="Search">
+                            <a class="nav-link-in nav-link text-uppercase text-dark" href="#">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 toggle d-none d-lg-block d-xl-block">
+                            <a class="nav-link-in nav-link text-uppercase">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container input-in position-fixed">
+            <form class="d-flex">
+                <input type="text" class="form-control fw-normal" placeholder="Search Here" aria-label="Username" aria-describedby="addon-wrapping">
+                <button type="button" class="btn btn-warning d-none">Warning</button>
+                <span id="close_search" title="Close Search">X</span>
+            </form>
+        </div>
+        <!-- End nav-->
+        <!-- Start Header -->
+        <div class="bg-img-contact">
+            <div class="container center-in d-flex justify-content-end text-white">
+                <div class="pt-5 me-5">
+                    <h1 class="fw-bold m-0">Checkout</h1>
+                    <p><a href="#" class="text-decoration-none text-white">Home</a><i class="fa-solid fa-right-long ps-3 pe-3"></i><a href="#" class="text-decoration-none text-white">Checkout</a></p>
+                </div>
+            </div>
+        </div> 
+        <!-- End Header -->
+        <!-- Start Map -->
+        <!-- Start Checkout Area-->
+        <div class="checkout">
+            <div class="container container-center">
+                <div class="head p-2">
+                    <p class="m-0 ps-3 text-dark">Returning Customer? <a href="#" class="text-danger">Click here to login</a></p>
+                </div>
+                <div class="p-2 ms-4">
+                    <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+                </div>
+                <form class="ms-4">
+                    <div class="overflow-hidden">
+                        <div class="row gy-4 mb-3">
+                            <div class="col-12 col-lg-4 col-md-5 col-sm-12">
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username or Email">
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-5 col-sm-12">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="row gy-4 p-2 d-flex align-items-center">
+                            <div class="col-12 col-lg-1 col-md-2">
+                                <button class="text-uppercase ps-4 pe-4" type="submit">Login</button>
+                            </div>
+                            <div class="col-12 col-lg-2 col-md-3 col-sm-12">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1"> Remember me</label>
+                            </div>
+                            <a class="mt-4 text-decoration-none text-secondary" href="#">Lost your password?</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="head p-2">
+                    <p class="m-0 ps-3 text-dark">Have a coupon? <a href="#" class="text-danger">Click here to enter your code</a></p>
+                </div>
+                <form class="p-4">
+                        <div class="overflow-hidden mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter coupon code">
+                        </div>
+                        <button class="text-uppercase ps-4 pe-4 border border-1 rounded" type="submit">Apply Coupon</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="billing mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8 col-xxl-8 col-lg-8 col-md-12 col-sm-12 ">
+                        <div class="p-0">
+                            <h4 class="text-dark">Billing Details</h4>
+                            <hr>
+                            <form action="" class="pt-4">
+                                <div class="row gy-4 mb-3">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" id="FirstName" placeholder="First Name">
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" id="LastName" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="CompanyName" name="company" placeholder="Company name">   
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" id="PhoneNumber" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" id="EmailAddress" placeholder="Email Address">
+                                    </div>
+                                    <div class="col-12 ">
+                                        <select class="form-select text-secondary" aria-label="Default select example">
+                                            <option selected >Country</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>                              
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="CompanyName" name="company" placeholder="Address line 01">   
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="CompanyName" name="company" placeholder="Address line 02">   
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="CompanyName" name="company" placeholder="Town/City">   
+                                    </div>
+                                    <div class="col-12">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>District</option>
+                                            <option value="1">District 1</option>
+                                            <option value="2">District 2</option>
+                                            <option value="3">District 3</option>
+                                        </select>                              
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Ship to a different address?</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="p-2">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="p-3 bg-billing-right">
+                            <h5 class="text-dark mt-4">Your Order</h5>
+                            <hr>
+                                <ul class="list p-0">
+                                    <li><a href="#">Product </a><span>Total</span></li>
+                                    <li><a href="#">Fresh Blackberry</a><span>x 02</span><span>$720.00</span></li>
+                                    <li><a href="#">Fresh Tomatoes</a><span>x 02</span><span>$720.00</span></li>
+                                    <li><a href="#">Fresh Brocoli</a><span>x 02</span><span>$720.00</span></li>
+                                </ul>
+                                <ul class="list p-0">
+                                    <li><a href="#" class="text-dark">Subtotal</a><span>$2160.00</span></li>
+                                    <li><a href="#" class="text-dark">Shipping </a><span>Flat rate: $50.00</span></li>
+                                    <li><a href="#" class="text-dark">Total </a><span class="text-dark">$2210.00</span></li>
+                                </ul>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        <p class="text-dark">CHECK PAYMENTS</p>
+                                    </label>
+                                </div>
+                                <div class="w-100 bg-white ">
+                                    <p class="p-3">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                </div>
+                                <div class="form-check d-flex justify-content-between">
+                                    <div class="input">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1"><p class="text-dark">PAYPAL</p></label> 
+                                    </div>
+                                    <div class="img">
+                                        <img src="images/product/card.jpg" alt="...">
+                                    </div>
+                                </div>
+                                <div class="w-100 bg-white ">
+                                    <p class="p-3">Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <p>I’ve read and accept the<span class="text-danger"> terms & conditions*</span></p>
+                                    </label>
+                                </div>
+                                <div class="m-auto text-center">
+                                    <button class="text-uppercase ps-4 pe-4 border border-1 rounded" type="submit">Proceed to Paypal</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Checkout Area-->
+        <!-- Start footer-area section_gap-->
+        <div class="footer container-center p-5" style="background-color: #222222;">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-5 mb-5">
+                    <div class="col col-lg-3 mb-3">
+                        <h5 class="text-white fw-bold mb-4">About Us</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+                    </div>
+                    <div class="col col-lg-4 mb-3 form">
+                        <h5 class="text-white fw-bold mb-4">Newsletter</h5>
+                        <p>Stay update with our latest</p>
+                        <div class="d-flex flex-row">
+                            <input class="w-100 border-0 form-input"  placeholder="Enter Email " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+                            <button class="btn rounded-0"><i class="fa fa-long-arrow-right"></i></button>
+                            <div style="position: absolute; left: -5000px;">
+                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 mb-3">
+                        <h5 class="text-white fw-bold mb-4">Instragram Feed</h5>
+                        <ul class="nav w-100 ">
+                            <li class="p-1"><img src="images/i1.jpg"></li>
+                            <li class="p-1"><img src="images/i2.jpg"></li>
+                            <li class="p-1"><img src="images/i3.jpg"></li>
+                            <li class="p-1"><img src="images/i4.jpg"></li>
+                            <li class="p-1"><img src="images/i5.jpg"></li>
+                            <li class="p-1"><img src="images/i6.jpg"></li>
+                        </ul>
+                    </div>
+                    <div class="col col-lg-2 mb-3">
+                        <h5 class="text-white fw-bold mb-4">Follow Us</h5>
+                        <p>Let us be social</p>
+                            <ul class="nav">
+                                <li><a href="#" class="link-secondary ps-0 p-3"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="link-secondary p-3"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#" class="link-secondary p-3"><i class="fa-brands fa-dribbble"></i></a></li>
+                                <li><a href="#" class="link-secondary pe-0 p-3"><i class="fa-brands fa-behance"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom d-flex justify-content-center">
+                    <p>Copyright © 2023 All rights reserved | This template is made with <i class="fa-regular fa-heart text-warning"></i> by <span class="text-warning">Ibraheem Salem</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- End footer-area section_gap -->
+        <!-- Js Main -->
+        <script src="js/main.js"></script>
+        <!-- JS Bootstrap-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body> 
+</html>
