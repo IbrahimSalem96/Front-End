@@ -1,0 +1,73 @@
+let lang = {
+    en : {
+        languages : "languages",
+        GourmetAuCatering : "Gourmet au Catering",
+        Home : "Home",
+        About : "About",
+        Menu : "Menu",
+        LeCatering : "Le Catering",
+        AboutCatering : "About Catering",
+        Traditionsince1889 : "Tradition since 1889",
+        text1 : `The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
+        consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur.We only use `,
+        text2 : `Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+        OurMenu : "Our Menu",
+        BreadBasket : "Bread Basket",
+        Assortment : "Assortment of fresh baked fruit breads and muffins 5.50",
+        Honey : "Honey Almond Granola with Fruits",
+        Natural : "Natural cereal of honey toasted oats, raisins, almonds and dates 7.00",
+        Belgian : "Belgian Waffle",
+        Vanilla : "Vanilla flavored batter with malted flour 7.50",
+        Scrambled : "Scrambled eggs",
+        ScrambledEggs : "Scrambled eggs, roasted red pepper and garlic, with green onions 7.50",
+        Blueberry : "Blueberry Pancakes",
+        syrup : "With syrup, butter and lots of berries 8.50",
+        Contact : "Contact",
+        fullService : "We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contactus.",
+        Catering : "Catering Service, 42nd Living St, 43043 New York, NY",
+        emailalso : "You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us amessage here:",
+        SENDMESSAGE : "SEND MESSAGE",
+        Poweredby : "Versio parata est ab Ibrahim Salem",
+        Designed : "Designed by W3",
+    
+    },
+    ar : {
+        languages : "اللغات",
+        GourmetAuCatering : "الطعم الرائع",
+        Home : "الرئيسية",
+        About : "من نحن",
+        Menu : "القائمة",
+        LeCatering : "لو كاترينج",
+        AboutCatering : "حول تقديم الطعام",
+        Traditionsince1889 : "منذ عام 1889",
+        text1 : `تم تأسيس المطاعم في بلابلا من قبل السيد. سميث يعاني من ألم في المؤخرة ، فهو يتابع مهنة في السعي للحصول على وظيفة في الكلية ، لكن في نفس الوقت يقعون في قدر كبير من الألم والمعاناة. للوصول إلى أدق التفاصيل ، لا ينبغي لأحد أن يمارس أي نوع من العمل ما لم يستفيد منه. Duis aute iruredolor في إعادة إحياء السرور لأنه يريد أن يكون شعرة من الألم eu no pariatur. نحن نستخدم فقط المكونات الموسمية.`,
+        text2 : `ما لم تعمهم الرغبة ، لا يخرجون ، فهم مخطئون ، يتخلون عن واجباتهم ، يلين العقل ، أي أنه نتيجة المصاعب ، لكنها تستغرق وقتًا طويلاً مثل بعض الأعمال العظيمة. و ألم. للوصول إلى أدق التفاصيل ، لا ينبغي لأحد أن يمارس أي نوع من العمل ما لم يستفيد منه.`,
+        OurMenu : "القائمة لدينا",
+        BreadBasket : "سلة خبز",
+        Assortment : "تشكيلة من خبز الفواكه الطازج والكعك 5.50",
+        Honey : "جرانولا بالعسل واللوز بالفواكه",
+        Natural : "حبوب طبيعية من الشوفان المحمص بالعسل والزبيب واللوز والتمر 7.00",
+        Belgian : "وافل بلجيكي",
+        Vanilla : "خليط بنكهة الفانيليا مع دقيق الشعير 7.50",
+        Scrambled : "بيض مخفوق",
+        ScrambledEggs : "بيض مخفوق ، فلفل أحمر محمص ، ثوم ، بصل أخضر 7.50",
+        Blueberry : "فطائر التوت الأزرق",
+        syrup : "مع شراب ، زبدة و توت 8.50",
+        Contact : "تواصل معنا",
+        fullService : "نحن نقدم خدمة تموين كاملة لأي مناسبة ، كبيرة كانت أم صغيرة. نحن نتفهم احتياجاتك وسوف نقدم الطعام لتلبية المعايير الأكبر لهم جميعًا ، سواء من حيث الشكل أو الذوق. لا تترددوا في الاتصال بنا.",
+        Catering : "خدمة تقديم الطعام، 24",
+        emailalso : "يمكنك أيضًا الاتصال بنا عبر الهاتف 00553123-2323 أو البريد الإلكتروني cats@catering.com ، أو يمكنك إرسال بريد إلكتروني إليناالرسالة هنا:",
+        SENDMESSAGE : "أرسل رسالة",
+        Poweredby : "الترجمة من إعداد إبراهيم سالم",
+        Designed : "صمم بواسطة W3",
+
+    }
+}
+
+export default lang;
+
+
+

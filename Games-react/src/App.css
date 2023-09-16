@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-hover: rgba(255, 255, 255, 0.10);
+    --color-white: white;
+    --bg-white: white;
+    --bg-primary: #0071f8;
+    --bg-btn: #0061e8;
+    --bg-btnHover: #0071f8;
+    --transition: all .3s;
+}
+
+a {
+    text-decoration: none !important;
+}

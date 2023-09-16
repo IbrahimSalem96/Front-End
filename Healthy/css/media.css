@@ -1,0 +1,303 @@
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Healthy .tab .mobile {
+        display: flex;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero .right-side h1 {
+        width: 70rem;
+    }
+
+    .programs .tabs {
+        height: 35rem;
+    }
+
+    .programs .tabs .content:hover {
+        height: 35rem;
+        top: -4rem;
+    }
+
+    .programs .tabs .activeList {
+        height: 38rem;
+    }
+
+    .bg-hero .left-side {
+        display: none;
+    }
+
+    .bg-hero .right-side {
+        flex: 100%;
+    }
+
+    .bg-hero .hero .right-side .btn {
+        justify-content: start;
+    }
+
+    .list-down div {
+        text-align: center;
+    }
+
+    .Help .content,
+    .Testimonials .content {
+        padding: 2rem;
+    }
+
+    .Help .content .right-side,
+    .Testimonials .content .right-side {
+        text-align: center;
+    }
+
+    .Help .content .left-side .card,
+    .Testimonials .content .left-side .card {
+        justify-content: center;
+    }
+
+    .Started-Eatly {
+        padding: 2rem;
+    }
+
+    .Healthy .tab {
+        grid-template-columns: 100%;
+    }
+
+    .Healthy .header .arrow {
+        display: none;
+    }
+
+    .Healthy .tab .col-2 .slider {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .programs .tabs .content:hover {
+        background: rgb(243, 193, 67);
+        height: 35rem;
+        top: -4rem;
+        border-radius: 5rem 5rem 0 0;
+        color: #5E2479;
+        transition: var(--transition)
+    }
+
+    .Help .content .right-side img,
+    .Testimonials .content .right-side img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Help .content,
+    .Testimonials .content {
+        grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    }
+
+}
+
+@media (max-width: 900px) {
+    .programs .tabs {
+        padding: 7rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25rem 25rem;
+        gap: 3rem;
+        height: auto;
+    }
+
+    .programs .tabs .content,
+    .programs .tabs .content.first,
+    .programs .tabs .content.last {
+        max-height: 300px;
+        border-radius: 5rem !important;
+    }
+
+}
+
+@media (max-width: 767px) {
+    #main {
+        display: block;
+    }
+
+    .bg-hero header.nav {
+        display: none;
+    }
+
+    .hero .right-side h1 {
+        width: 50rem !important;
+    }
+
+    .programs .tabs {
+        padding: 6rem 2rem 0;
+        grid-template-columns: 100%;
+        grid-template-rows: 30rem 30rem 30rem 30rem;
+    }
+
+    .Help .content,
+    .Testimonials .content {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+
+    .Started-Eatly .box p,
+    .Started-Eatly .box button {
+        width: auto;
+    }
+
+    .Healthy .header .arrow {
+        display: none;
+    }
+
+    .Healthy .tab .col-2 .carousel-container .carousel-item {
+        overflow-x: scroll;
+        padding: 2rem;
+    }
+
+    .Healthy .tab .col-2 .carousel-container .carousel-item .col {
+        width: 200%;
+    }
+
+    .Healthy .tab .col-2 .carousel-container .carousel-item::-webkit-scrollbar {
+        width: .1rem;
+        height: .2rem;
+    }
+
+    .Healthy .tab .col-2 .carousel-container .carousel-item::-webkit-scrollbar-thumb {
+        background: #8945EC;
+        border-radius: .6rem;
+    }
+
+    .Healthy .tab .col-2 .carousel-container .carousel-item::-webkit-scrollbar-track {
+        background: #ccb7ea63;
+        border-radius: .6rem;
+    }
+
+    .Healthy .header .title .buttom {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Copyright .social {
+        width: 100%;
+    }
+
+    .Copyright .cop {
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media (max-width: 494px) {
+    .hero .right-side h1 {
+        width: 35rem !important;
+        font-size: 5rem;
+    }
+
+    .hero .right-side p br {
+        display: contents;
+    }
+
+    .dropping-texts {
+        width: 21rem !important;
+    }
+
+    .programs .header {
+        flex-direction: column;
+    }
+
+    .Help {
+        padding: 0rem 0;
+    }
+
+    .Healthy .tab .col-2 .slider {
+        justify-content: start;
+    }
+
+    .Help .content .left-side .header p,
+    .Testimonials .content .left-side .header p,
+    .Healthy .header .title .buttom {
+        width: 100%;
+    }
+
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    footer .grid-footer {
+        grid-template-columns: 100%;
+        gap: 0;
+    }
+
+    footer .grid-footer .colum-1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .hero {
+        height: 60rem;
+    }
+
+    .programs .tabs {
+        padding: 6rem 2rem 0;
+        gap: 0;
+    }
+
+    .programs .tabs .content {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .programs .tabs .content:hover {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .hero .right-side h1 {
+        width: 20rem !important;
+        font-size: 5rem;
+    }
+
+    .Started-Eatly .box {
+        padding: 2rem;
+    }
+
+    .Healthy .tab .col-2 {
+        justify-content: start;
+        gap: 2rem;
+    }
+
+    .Testimonials .content .left-side .card .card-body .slider .arrow {
+        display: none;
+    }
+
+    .Testimonials .content .left-side .card .card-body .arrow {
+        margin-top: 5rem;
+    }
+
+}

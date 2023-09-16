@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="description" content="API Get The User Github">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Api">
+  <meta name="author" content="Ibrahim Salem">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People Comparison</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="load">
+    <div class="loader"></div>
+  </div>
+  <header>
+    <aside class="left-nav">
+      <div class="bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <a href="index.html" class="gitpage" aria-label="Go the index page "><i class="fa-brands fa-github"></i></a>
+      <div class="inp hidden ">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="inp-username" placeholder="Search or jump to...">
+      </div>
+      <ul class="hidden">
+        <li><a href="#">Pull requests</a></li>
+        <li><a href="#">Issues</a></li>
+        <li><a href="#">Codespaces</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="test.html">challenges</a></li>
+      </ul>
+      <div class="notifac">
+        <i class="fa-regular fa-bell"></i>
+      </div>
+    </aside>
+    <aside class="hidden right-nav">
+      <aside>
+        <i class="fa-regular fa-bell"></i>
+      </aside>
+      <aside>
+        <i class="fa-solid fa-plus smllerI"> <i class="fa-solid fa-caret-down"></i></i>
+      </aside>
+      <aside class="img-center">
+        <img class="img-topNav" src="https://avatars.githubusercontent.com/u/127291288?v=4" alt="user img" width="20px"
+          height="20px">
+        <i class="fa-solid fa-caret-down smllerI"></i>
+      </aside>
+    </aside>
+  </header>
+  <div class="center">
+    <div class="containerA">
+      <div class="person person1">
+        <div class="person-image">
+          <img class="avatars1" src="https://clipground.com/images/img_avatar-png-2.png" alt="person">
+        </div>
+        <h2>Person 1</h2>
+        <div class="selection">
+          <div class="input-container">
+            <input type="text" class="input-field input-field1" placeholder="Name">
+          </div>
+          <p class="Name1"></p>
+          <p class="num-user-repo1"></p>
+        </div>
+      </div>
+      <div class="person person2">
+        <div class="person-image">
+          <img class="avatars2" src="https://clipground.com/images/img_avatar-png-2.png" alt="person">
+        </div>
+        <h2>Person 2</h2>
+        <div class="selection">
+          <div class="input-container">
+            <input type="text" class="input-field input-field2" placeholder="Name">
+          </div>
+          <p class="Name2"></p>
+          <p class="num-user-repo2"></p>
+        </div>
+      </div>
+    </div>
+    <div class="sub">
+      <button class="btnchal btn">Submit</button>
+    </div>
+  </div>
+  <footer class="container">
+    <div class="hr"></div>
+    <div class="footer">
+      <div class="logo-end">
+        <ul>
+          <li> <i class="fa-brands fa-github"></i> </li>
+          <li> 2023 GitHub, Inc.</li>
+        </ul>
+      </div>
+      <div class="list">
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Status</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Contact GitHub</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/challenges.js"></script>
+</body>
+
+</html>

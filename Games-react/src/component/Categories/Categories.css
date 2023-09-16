@@ -1,0 +1,56 @@
+.categories {
+    padding: 120px 0;
+}
+
+.categories .section-heading {
+    margin-bottom: 70px;
+}
+
+.categories .section-heading h6 {
+    color: var(--bg-btn);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.categories .section-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 44px;
+    font-weight: 900;
+}
+
+.categories .item {
+    background-color: var(--bg-btnHover);
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: var(--transition);
+}
+
+.categories .item:hover {
+    background-color: var(--bg-btn);
+    transition: var(--transition);
+}
+
+.categories .item .thumb a img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.categories .item h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-white);
+    padding: 22px;
+    margin-bottom: 0px;
+}
+
+.categories .item .thumb {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}

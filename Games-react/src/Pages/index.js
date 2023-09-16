@@ -1,0 +1,5 @@
+export { default as Home } from "./Home/Home.js"
+export { default as Shop } from "./Shop/Shop.js"
+export { default as Product } from "./Product/Product.js"
+export { default as ContactUS } from "./ContactUS/ContactUS.js"
+export { default as SingIn } from "./SingIn/SingIn.js"

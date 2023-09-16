@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+}
+.contenier{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+.contenier .box .circul-up{
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+}
+.contenier .box .circul-up::before{
+    content: "";
+    position: absolute;
+    border-width: 56px 40px 0px 40px;
+    border-style: solid;
+    border-color: #ffa300 transparent transparent transparent;
+    border-radius: 50%;
+    bottom: 61px;
+    left: 85px;
+    z-index: 3;
+}
+.contenier .box .circul-up .brow{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 54px;
+    top: 10px;
+    border-radius: 86px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 41%, rgba(255,255,255,1) 100%);
+    z-index: 1;
+}
+.contenier .box .circul-up .center{
+    display: flex;
+    justify-content: center;
+}
+.contenier .box .circul-up .eye-L, .eye-R{
+    position: relative;
+    background-color: #e8e8e8;
+    border-radius: 70%;
+    outline: black solid 2px;
+    z-index: 2;
+}
+.contenier .box .circul-up .eye-L{
+    width: 70px;
+    height: 85px;
+    transform: translate(2px, 40px);
+}
+.contenier .box .circul-up .eye-L::before{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: black;
+    bottom: 19px;
+    right: 7px;
+    outline: #626262 solid 4px;
+}
+.contenier .box .circul-up .eye-L::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    bottom: 31px;
+    right: 18px;
+}
+.contenier .box .circul-up .eye-R{
+    width: 80px;
+    height: 65px;
+    transform: translate(10px, 50px);
+}
+.contenier .box .circul-up .eye-R::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 13px;
+    border-radius: 30px;
+    background-color: black;
+    outline: #626262 solid 4px
+}
+.contenier .box .circul-up .eye-R::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    bottom: 21px;
+    right: 39px;
+}
+.contenier .box  .circul-down{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-color: black;
+    margin: -140px auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.contenier .box  .circul-down::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 44px;
+    left: 25px;
+    border-radius: 150px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 46px 7px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 5px 46px 7px rgba(255,255,255,1);
+    box-shadow: 0px 5px 46px 7px rgba(255,255,255,1);
+    z-index: 1;
+}
+.contenier .box  .circul-down::after{
+    content: "";
+    position: absolute;
+    width: 17.5rem;
+    height: 16rem;
+    top: 0px;
+    left: 10px;
+    border-radius: 50%;
+    box-shadow: 0rem 2rem 0 0 #c7c7c7;
+}
+.contenier .box .circul-down .leg-L, .leg-R{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    bottom: 0;
+    left: 27px;
+    background-color: #ffa300;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+}
+.contenier .box .circul-down .leg-L{
+    margin-left: 150px;
+}

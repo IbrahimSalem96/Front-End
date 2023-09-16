@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.01bf4ec9.css",
+    "main.js": "/static/js/main.48e7d9a4.js",
+    "static/media/single-game.jpg": "/static/media/single-game.3b5c7bd6aa154e87b833.jpg",
+    "static/media/cta-bg.jpg": "/static/media/cta-bg.c463053fb109634be5a8.jpg",
+    "static/media/banner-image.jpg": "/static/media/banner-image.fb34799802e973c20fca.jpg",
+    "static/media/trending-04.jpg": "/static/media/trending-04.ca2070ec5674ae6dd987.jpg",
+    "static/media/trending-02.jpg": "/static/media/trending-02.db15162a6dacf91c4f90.jpg",
+    "static/media/trending-01.jpg": "/static/media/trending-01.110668a5ff013837f02d.jpg",
+    "static/media/banner-bg.jpg": "/static/media/banner-bg.34c63d813e1d30b962e0.jpg",
+    "static/media/categories-03.jpg": "/static/media/categories-03.8d759c2d2499da9e89cc.jpg",
+    "static/media/trending-03.jpg": "/static/media/trending-03.7f099612dd36c3c3c98c.jpg",
+    "static/media/categories-01.jpg": "/static/media/categories-01.48e0df288b20e8b3af38.jpg",
+    "static/media/categories-05.jpg": "/static/media/categories-05.ca61172f8537da3e380d.jpg",
+    "static/media/top-game-04.jpg": "/static/media/top-game-04.39b258f8b28d9e47da19.jpg",
+    "static/media/top-game-03.jpg": "/static/media/top-game-03.1273d58971ab9e984062.jpg",
+    "static/media/categories-04.jpg": "/static/media/categories-04.9bd00d25e661c1ff7aa0.jpg",
+    "static/media/categories-02.jpg": "/static/media/categories-02.bc2565b75f04fbef15a6.jpg",
+    "static/media/top-game-05.jpg": "/static/media/top-game-05.b91ed1800a57cfab733a.jpg",
+    "static/media/top-game-01.jpg": "/static/media/top-game-01.4c6da29c71cda758795c.jpg",
+    "static/media/top-game-02.jpg": "/static/media/top-game-02.df70368c0a261edb41c6.jpg",
+    "static/media/top-game-06.jpg": "/static/media/top-game-06.3f4be5d49e1aec8ea4f2.jpg",
+    "static/media/page-heading-bg.jpg": "/static/media/page-heading-bg.b82950fd7391a52d25c0.jpg",
+    "index.html": "/index.html",
+    "main.01bf4ec9.css.map": "/static/css/main.01bf4ec9.css.map",
+    "main.48e7d9a4.js.map": "/static/js/main.48e7d9a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01bf4ec9.css",
+    "static/js/main.48e7d9a4.js"
+  ]
+}

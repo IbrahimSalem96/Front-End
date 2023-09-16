@@ -1,0 +1,543 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorPage: #009688;
+    --colorBlack: black;
+    --colorwhite: white;
+    --transition: all 0.4s ease-in-out;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    font-size: 8vmin;
+}
+
+h2 {
+    font-size: 7vmin;
+}
+
+h3 {
+    font-size: 6vmin;
+}
+
+h4 {
+    font-size: 5vmin;
+}
+
+h5 {
+    font-size: 4vmin;
+}
+
+h6 {
+    font-size: 3vmin;
+}
+
+p {
+    font-size: 2.7vmin;
+}
+
+
+/*##################################################*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--colorBlack);
+    z-index: 3;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+nav .logo img {
+    width: 12rem;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    color: var(--colorwhite);
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    background-color: var(--colorPage);
+    font-weight: 600;
+}
+
+nav ul li a i {
+    padding-left: 0.3rem;
+}
+
+nav ul li ul {
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--colorBlack);
+    right: 2rem;
+    top: 3rem;
+    width: 9rem;
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: flex;
+}
+
+nav ul li ul li {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+nav ul li ul li:hover {
+    background-color: var(--colorPage);
+}
+
+
+
+.header-leftside {
+    display: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.burger-menu {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding-right: 2rem;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.burger-menu input {
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+}
+
+.burger-menu input,
+.burger-menu:before,
+.burger-menu:after {
+    content: "";
+    height: 5px;
+    width: 30px;
+    background-color: var(--colorPage);
+    border-radius: 100px;
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+    transform-origin: left center;
+    transition: var(--transition);
+}
+
+.burger-menu:before {
+    position: relative;
+    bottom: 5px;
+}
+
+.burger-menu input:checked {
+    width: 0;
+}
+
+.burger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: 35.35533905925;
+    background-color: var(--colorPage);
+}
+
+.burger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: 35.35533905925;
+    background-color: var(--colorPage);
+}
+
+.burger-menu:after {
+    position: relative;
+    top: 5px;
+}
+
+.header-slider {
+    box-shadow: 0 1px 8px grey;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.header-slider>a {
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-weight: 600;
+    padding: 1rem 1rem;
+}
+
+.header-slider .Dropdown-header {
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-slider .Dropdown-header a {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    color: var(--colorBlack);
+    font-weight: 600;
+}
+
+.header-slider a:hover {
+    background-color: var(--colorPage);
+    color: var(--colorwhite);
+    padding: 1rem 1rem;
+}
+
+
+.header-slider .Dropdown-style {
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-weight: 600;
+    flex-direction: column;
+
+}
+
+.nav-links {
+    border-bottom: 1px solid #dcdcdc;
+    color: var(--colorprimery);
+}
+
+
+.burger-menu:has(input:checked)+.header-slider {
+    transform: translateY(0);
+    transition: var(--transition);
+}
+
+/*################################################################# Hero Section ################################################################# */
+.bg-herosection {
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    padding: 2rem;
+}
+
+.bg-herosection article {
+    background: var(--colorBlack);
+    color: var(--colorwhite);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 100;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.bg-herosection article:hover {
+    background-color: var(--colorPage);
+    transition: var(--transition);
+}
+
+/*################################################################# Team ################################################################# */
+.Team {
+    padding: 5rem 0;
+}
+
+.Team .header-text {
+    text-align: center;
+}
+
+.Team .header-text h4 {
+    text-transform: uppercase;
+}
+
+.Team .header-text p {
+    font-size: 2vmin;
+    letter-spacing: 1px;
+}
+
+.Team article {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.Team article aside {
+    min-width: calc(100% / 4 - 1rem);
+}
+
+.Team article aside img {
+    width: 32vmin;
+}
+
+.Team article aside h6 {
+    margin-bottom: 1rem;
+}
+
+/*################################################################# Team ################################################################# */
+.Work {
+    padding: 5rem 1rem;
+    background-color: #333333;
+    width: 100%;
+}
+
+.Work .flex-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    place-content: center;
+    gap: 1rem;
+}
+ 
+
+.Work .flex-work .card {
+    color: var(--colorwhite);
+}
+
+.Work .flex-work .card p {
+    font-size: 1rem;
+}
+
+.Work .flex-work .card h5 {
+    margin-bottom: 1rem;
+}
+ 
+.flex-work aside:not(:nth-child(1)):hover h5 {
+    color: var(--colorPage);
+    transition: var(--transition);
+}
+
+.flex-work aside:not(:nth-child(1)) {
+    background-color: var(--colorwhite);
+}
+.flex-work aside .img-hero{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+ 
+.flex-work aside img {
+    width: 100%;
+    height: 15rem;
+    transition: var(--transition);
+}
+.flex-work aside img:hover {
+    transform: rotate(10deg) scale(2);
+    transition: var(--transition);
+}
+.Work .flex-work aside .text {
+    padding: .8rem;
+}
+
+.Work .flex-work aside .text h5 {
+    margin: 0 0 1rem 0;
+    transition: var(--transition);
+}
+
+.Work .flex-work aside .text ul li {
+    list-style-type: none;
+    padding: .5rem 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+.Work .flex-work aside .text ul li {
+    list-style-type: none;
+    padding: .5rem 0;
+    border-bottom: 1px solid #c4c4c4;
+    transition: var(--transition);
+}
+.Work .flex-work aside .text ul li:hover  {
+    padding-left: 1rem;
+    color: var(--colorPage);
+    transition: var(--transition);
+}
+/*################################################################# Hero Section ################################################################# */
+.bg-herosection {
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    padding: 2rem;
+}
+
+.bg-herosection article {
+    background: var(--colorBlack);
+    color: var(--colorwhite);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 100;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.bg-herosection article:hover {
+    background-color: var(--colorPage);
+    transition: var(--transition);
+}
+
+/*################################################################# Contact ################################################################# */
+.Contact {
+    padding: 5rem 0;
+}
+
+.Contact .header-text {
+    text-align: center;
+}
+
+.Contact .header-text h4 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.Contact article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Contact article aside{
+    min-width: calc(100% / 2 );
+    height: 30rem;
+}
+.Contact article aside:nth-child(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 72%), rgba(0, 0, 0, .8)),url(../img/hero-contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--colorPage);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Contact article aside .contact-incon h5{
+    margin-bottom: 1rem;
+}
+ 
+.Contact article aside ul li{
+    cursor: pointer;
+    list-style-type: none;
+    padding: .8rem 0;
+    transition: var(--transition);
+}
+.Contact aside ul li:hover{
+    color: var(--colorwhite);
+    transition: var(--transition);
+}
+
+.Contact article aside ul li i{
+    width: 1.2rem;
+    height: 1rem;
+}
+
+.Contact article aside:nth-child(2){
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 0px 20px 16px rgba(17,17,26,0.18);
+}
+.Contact article aside:nth-child(2) label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.Contact article aside:nth-child(2) input, textarea{
+    padding: .8rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    resize: none;
+    border: 1px solid rgb(218, 218, 218);
+    outline: none;
+    transition: var(--transition);
+    background-color: rgb(235, 235, 235);
+ }
+ .Contact article aside:nth-child(2) input:focus,  .Contact article aside:nth-child(2) textarea:focus{
+    border: 1px solid var(--colorPage);
+    background-color:  var(--colorwhite);
+    transition: var(--transition);
+}
+/*################################################################# Footer ################################################################# */
+footer{
+    padding: 2rem 0;
+    background-color: var(--colorBlack);
+    height: auto;
+    text-align: center;
+}
+footer article h6{
+    color:var(--colorwhite);
+    margin: 1rem;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul li i{
+    padding: 1rem;
+    color: var(--colorwhite);
+    background-color: var(--colorPage);
+    transition: var(--transition);
+}
+footer ul li:hover i{
+    color: var(--colorPage);
+    background-color: var(--colorwhite);
+    transition: var(--transition);
+}
+footer p{
+    padding: 2rem 0;
+    color: var(--colorwhite);
+     text-align: center;
+}
+footer p a{
+    padding: 2rem 0;
+    color: var(--colorPage);
+    text-align: center;
+    transition: var(--transition);
+}
+footer p a:hover{
+    color: var(--colorwhite);
+    transition: var(--transition);
+}
+footer p strong{
+    color: var(--colorPage);
+}

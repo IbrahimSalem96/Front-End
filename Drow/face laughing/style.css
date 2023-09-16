@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #728c8c;
+}
+.contenier{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contenier .box{
+    width: 500px;
+    height: 350px;
+    background-color: #fcbc47;
+    position: relative;
+    border-radius: 82px;
+    z-index: 2;
+}
+.contenier .box .nose{
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e29125;
+    border: 40px solid #e29125;
+    border-radius: 70px;
+    z-index: 1;
+}
+.contenier .box .nose::before{
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: -40px;
+    border: 40px solid #fcbc47;
+    border-radius: 70px;
+}
+.contenier .box .eyesL, .eyesR{
+    width: 130px;
+    height: 130px;
+    border-radius: inherit;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    margin: 80px 59px 59px 59px;
+    position: relative;
+}
+.contenier .box .eyesL::before{
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 0px;
+    border: 60px solid #e29125;
+    border-radius: 50%;
+    z-index: -1;
+}
+.contenier .box .eyesL::after{
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -4px;
+    border: 72px solid #fcbc47;
+    border-radius: 50%;
+    z-index: -1;
+}
+.contenier .box .eyesR::before{
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 15px;
+    border: 60px solid #e29125;
+    border-radius: 50%;
+    z-index: -1;
+}
+.contenier .box .eyesR::after{
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -4px;
+    border: 72px solid #fcbc47;
+    border-radius: 50%;
+    z-index: -1;
+}
+.in{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: inherit;
+    background-color: black;
+    margin: 34px 0px 0px 35px;
+}
+.eyes-in-top{
+    width: 18px;
+    height: 18px;
+    border-radius: inherit;
+    background-color: white;
+    position: absolute;
+    margin: 30px 0px 0px 49px;
+}
+.eyes-in-down{
+    width: 7px;
+    height: 7px;
+    border-radius: inherit;
+    background-color: white;
+    position: absolute;
+    margin: 50px 0px 0px 65px;
+}
+.contenier .box .cheeksL, .cheeksR{
+    width: 80px;
+    height: 60px;
+    background-color: #fbab47;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+}
+.cheeksL{
+    margin-left: 40px;
+}
+.cheeksR{
+    margin-left: 10px;
+}
+.lips{
+    width: 100px;
+    height: 50px;
+    border: 50px solid black;
+    margin: -70px auto;
+    position: relative;
+    border-radius: 50%;
+    z-index: -1;
+}
+.lips::before{
+    content: "";
+    position: absolute;
+    top: -72px;
+    width: 27px;
+    left: -63px;
+    border: 50px solid #fcbc47;
+    border-radius: 50%;
+}
+.Teeths{
+    display: inline-flex;
+}
+.contenier .box .lips .TeethL, .TeethR{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    margin: 23px 23px 0 -19px;
+    border-radius: 3px;
+}
+ 
